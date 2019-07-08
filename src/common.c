@@ -18,6 +18,7 @@
 #include <limits.h>
 #include <time.h>
 #include <unistd.h>
+#include <inttypes.h>
 #include "fastcommon/logger.h"
 #include "fastcommon/shared_func.h"
 #include "fastcommon/sockopt.h"

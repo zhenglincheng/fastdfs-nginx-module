@@ -595,7 +595,7 @@ static int fdfs_calc_content_length(struct fdfs_http_context *pContext,
     if (pContext->if_range && pContext->range_count > 1)
     {
        pResponse->boundary_len = sprintf(pResponse->boundary,
-               "%"PRIx64, get_current_time_us());
+               "%"PRIx64, 0L);
        sprintf(pResponse->content_type_buff,
                "multipart/byteranges; boundary=%s",
                pResponse->boundary);
